@@ -155,8 +155,17 @@ h6.sub-container-footer{
 div.footer-info2{
 	display: none;
 }
+div.section-DI-2{
+	display: none;
+}
+
+
+
 /*vista celular */
-@media (min-width: 350px) and (max-width: 767.98px) {
+@media (min-width: 350px) and (max-width: 737.98px) {
+	a.nav-link:hover{
+		border-bottom: 0px solid #FF5A56;
+	}
 	div.card-deck div.card {
 		-ms-flex: 0 0 50%;
 		flex: 0 0 50%;
@@ -178,9 +187,9 @@ div.footer-info2{
 
 	}
 	.col-personalizado{
-		margin-top: 25px;
-		margin-left: 45px;
-		margin-right: 240px;
+		margin-top: 20px;
+		margin-left: 30px;
+		margin-right: 255px;
 		position:absolute;
 	}
 	.p-container-1{
@@ -213,9 +222,11 @@ div.footer-info2{
 	}
 	div.style-back-img{
 		height: 268px;
+		margin-top: 90px;
 	}
 	div.style-back-img:before{
 		height: 268px;
+		
 	}
 	img.img-footer-zona{
 		width: 100%;
@@ -254,11 +265,41 @@ div.footer-info2{
 
 	div.footer-info2 p{
 		font-size: 8px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	div.section-DI-1{
+		display: none;
+	}
+	div.section-DI-2{
+		display: inherit
+	}
+	a.btn-card-personalizado{
+		position: relative;
+		bottom: 33px;
+		background-color: #04DFED;
+		border-radius: 0px 0px 20px 20px;
+		width: 96%;
+		height: 60px;
+		margin-left: 8px;
+		font-size: 20px;
+		font-weight: bolder;
+		color: white;
+	}
+	a.btn-card-personalizado:hover{
+		color: white;
+	}
+	div.collapse div.card-body{
+		bottom: 33px;
 	}
 }
 
 /*vista tablet o horizontal celular */
 @media (min-width: 768px) and (max-width: 991.98px) {
+	a.nav-link:hover{
+		border-bottom: 0px solid #FF5A56;
+	}
 	div.card-deck div.card {
 		-ms-flex: 0 0 48%;
 		flex: 0 0 48%;
@@ -342,6 +383,33 @@ div.footer-info2{
 	}
 	p.icon{
 		font-size: 15px;
+	}
+	div.section-DI-1{
+		display: none;
+	}
+	div.section-DI-2{
+		display: inherit;
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+	}
+	a.btn-card-personalizado{
+		position: relative;
+		bottom: 71px;
+		background-color: #04DFED;
+		border-radius: 0px 0px 20px 20px;
+		width: 96%;
+		height: 60px;
+		margin-left: 13px;
+		font-size: 20px;
+		font-weight: bolder;
+		color: white;
+	}
+	a.btn-card-personalizado:hover{
+		color: white;
+	}
+	div.collapse div.card-body{
+		bottom: 100px;
 	}
 }
 
